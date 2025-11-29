@@ -1,0 +1,134 @@
+/*a tag abaixo é para linkar os formatos baixados do google fonts que esta na pasta font
+nela vamos passar todas as propriedades para uso nas tags do index.html*/
+@font-face {
+    font-family: "Unbounded"; /*nome da fonte a ser usada*/
+    src: url("../fonts/Unbounded-Bold.ttf") /*colocando o link da pasta para a font a ser usada*/
+    format("truetype"); /*precisamos passar sempre o formato*/
+    font-weight: 700; /*aqui estamos colocando o peso da font que pegamos lá no google fonts e pediram para o site*/
+    font-style: normal; /*definindo o estilo da font*/
+    font-display: swap; /*aqio colocamos uma segurança pois a font pode demorar a carregar do google fonts e assim ela usa a opção 2 que colocamos*/
+}
+
+@font-face {
+    font-family: "Poppins"; /*nome da fonte a ser usada*/
+    src: url("../fonts/Poppins-Regular.ttf") /*colocando o link da pasta para a font a ser usada*/
+    format("truetype"); /*precisamos passar sempre o formato*/
+    font-weight: 400; /*aqui estamos colocando o peso da font que pegamos lá no google fonts e pediram para o site*/
+    font-style: normal; /*definindo o estilo da font*/
+    font-display: swap; /*aqio colocamos uma segurança pois a font pode demorar a carregar do google fonts e assim ela usa a opção 2 que colocamos*/
+}
+
+
+/* Reset simples limpando dados já inclusos no navegador*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*estilo desktop*/
+body {
+    background-color: #0E1014; /*para ficar todo o fundo da cor preta */
+    color: #ffffff; /* aqui estamos deixando os textos na cor branca */
+}
+
+header img {
+    display: block;
+    margin:75px 0 0 360px;
+}
+
+h1 {
+    font-size: 64px; /* estamos colocando o tamanho da fonte */
+    font-family: "Unbounded", sans-serif; /*colocamos uma familia de fontes que trouxemos go google fonts*/
+    text-align: center; /*alinhando o texto no centro*/
+    margin-top: 60px;
+    /* font-family: serif; */
+    /* font-family: sans-serif; */
+    /* font-family: monospace; */
+    /* font-family: cursive; */
+    /* font-family: fantasy; */
+}
+
+span {
+    color: #9747FF; /*colocando a cor rixa em uma palavra especifica da frase*/
+}
+
+a { /*aqui são os elementos do botão que criamos com o link*/
+    font-size: 24px;
+    font-family: "Poppins", sans-serif;
+    color: #ffffff; /*colocando a tag de link em branco*/
+    text-decoration: none; /*tirando a decoração do texto do botão*/
+    background-color: #9747FF;
+    width: 340px; /*colocando a altura*/
+    height: 66px; /*colocando a largura*/
+    display: block;
+    text-align: center; /*colocando o texto no centro*/
+    line-height: 66px;
+    border-radius: 36px; /*aqui colocamos o radius para arredondar as bordas do botão*/
+    margin: 40px auto;
+}
+
+a:hover { /*criadno uma tag para colocar uma cor no botão ao sobrepor*/
+    background-color: #8233e8; /*cor que vai aparacer no botão ao passar o mouse em cima*/
+}
+
+p {
+    font-size: 24px;
+    font-family: "Poppins", sans-serif;
+    text-align: center; /*alinhando o texto no centro*/
+    margin: 24px auto 0;
+    width: 792px;
+}
+
+section img { /*neste caso sem criar classes para os elemento usamos a imagem da section apenas*/
+    display: block;
+    width: 792px;
+    height: 446px;
+    margin: 0 auto;
+}
+
+/*colocando a responsividade do site, neste caso para o uso do site em tablet*/
+
+@media (max-width: 768px) {
+    
+        header img {
+        margin: 65px 0 0 60px;
+    }
+
+    p {
+        width: 648px;
+    }
+
+}
+
+/*colocando a responsividade do site, neste caso para o uso do site em celular*/
+
+@media (max-width: 375px) {
+    header img {
+        margin: 32px 0 0 16px;
+    }
+    h1 {
+        font-size: 40px;
+    }
+    p {
+        font-size: 20px;    
+        width: 340px;
+    }
+
+    a {
+        font-size: 20px;
+        width: 251px;
+    }
+    section img {
+        width: 340px;
+        height: 230px;
+    }
+}
+
+/*.cor-branca{
+    color:#ffffff
+} se quiser pode criar classes para colocar nos elementos que quer igual */
+
+/* h1, p, a{ podemos fszer assim deixando todas as tags na cor branca
+    color: #ffffff;
+} */
