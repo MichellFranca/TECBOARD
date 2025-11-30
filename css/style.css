@@ -28,8 +28,8 @@ nela vamos passar todas as propriedades para uso nas tags do index.html*/
 
 /*estilo desktop*/
 body {
-    background-color: #0E1014; /*para ficar todo o fundo da cor preta */
-    color: #ffffff; /* aqui estamos deixando os textos na cor branca */
+    background-color: white; /*para ficar todo o fundo da cor preta */
+    color: black; /* aqui estamos deixando os textos na cor branca */
 }
 
 header img {
